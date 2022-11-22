@@ -20,7 +20,7 @@
 }
 
 
-body{
+body {
 
   font-family: 'Oswald';
 
@@ -31,10 +31,10 @@ body{
 
 /* Variables */
 
-:root{
+:root {
 
---fond-gris: #B1B5BE;
---texte-nav:#707070;
+  --fond-gris: #B1B5BE;
+  --texte-nav: #707070;
 
 }
 
@@ -42,60 +42,61 @@ body{
 
 
 
-/* Mini reset */* {
+/* Mini reset */
+* {
 
-    margin: 0;
-    padding: 0;
-  
-  }
-  
-  a {
-  
-    text-decoration: none;
-  
-  }
-  
-  
-  ul {
-  
-    list-style-type: none;
-  
-  }
+  margin: 0;
+  padding: 0;
 
-  .container{
-    width: 1200px;
-    margin: 0 auto;
-  }
+}
+
+a {
+
+  text-decoration: none;
+
+}
+
+
+ul {
+
+  list-style-type: none;
+
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 /* ================= Header ============================ */
 
-#entete{
+#entete {
   padding: 30px;
 }
 
-#logo{
+#logo {
   width: 100%;
   display: flex;
   justify-content: center;
- 
+
 }
 
-#logo img{
+#logo img {
   margin-top: -25px;
   width: 60%;
   padding-bottom: 10px;
   margin-left: 50px;
- 
+
 }
 
-#navbar ul{
+#navbar ul {
 
   display: flex;
   justify-content: space-around;
-  
+
 }
 
-#navbar ul li a{
+#navbar ul li a {
   color: var(--texte-nav);
   font-weight: 400;
 }
@@ -103,8 +104,57 @@ body{
 /* ============================== Début du main content =================== */
 
 /* fond gris */
-.color{
-  height:80px;
+.color {
+  height: 80px;
   background-color: var(--fond-gris);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
+.color h1 {
+
+  text-align: center;
+  line-height: 70px;
+  font-weight: 500;
+}
+
+
+
+/* ============================ Modification Slider ===================== */
+
+.slider-wrapper {
+
+  margin-top: 2px;
+  padding-bottom: 50px;
+}
+
+
+#slider {
+
+  height: 400px;
+
+}
+
+
+.nivo-controlNav {
+
+  display: none;
+
+}
+
+/* ============================ Section Actus ===================== */
+
+
+#titre {
+
+  margin-left: 20%;
+
+}
+
+
+hr {
+  display: block;
+  color: black;
+  width: 60%;
+
+}

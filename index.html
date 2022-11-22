@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collège Sacré-Coeur Vannes</title>
-
     <!-- CSS secondaires / slider -->
     <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
@@ -14,19 +12,25 @@
     <!-- CSS principal -->
     <link rel="stylesheet" href="style.css">
 
+    <title>Collège Sacré-Coeur Vannes</title>
+
+
+
 
 
 </head>
 
 <body>
-
+    <!-- EN TETE DE PAGE -->
     <header id="entete" role="banner">
         <div id="logo">
 
-           <a href="index.html"><img src="images/Logo-college.png" alt="logo college"></a>
+            <a href="index.html"><img src="images/Logo-college.png" alt="logo college"></a>
 
         </div>
 
+
+        <!-- MENU NAVIGATION -->
         <nav id="navbar">
 
             <ul>
@@ -47,18 +51,49 @@
 
 
     </header>
-
+    <!-- MAIN CONTENT -->
     <main id="main-content" class="container" role="main">
-        <div class="color"></div>
+        <div class="color">
+            <h1>Bienvenu sur le site du collège le Sacré-Coeur</h1>
+        </div>
+
+
+
+
+
+        <!-- images et titre du slider -->
+        <div class="slider-wrapper theme-default">
+
+
+
+            <div id="slider" class="nivoSlider">
+                <img src="images/slider1.jpg" alt="Garden1" />
+                <img src="images/slider4.jpg" alt="Garden2" />
+                <img src="images/slider3.jpg" alt="Garden3" />
+
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <h2>GARDEN<br>
+                    <small><span class="vert">pro</span> design d'extérieur</small>
+                </h2>
+            </div>
+        </div>
+
+
+        <section id="actus">
+
+            <div id="titre">
+                <h2>Nos actualités</h2>
+                <hr size="5" noshade>
+                <p>Les plus récentes</p>
+            </div>
 
 
 
 
 
 
-
-
-
+        </section>
 
 
 
@@ -110,7 +145,20 @@
     </footer>
 
 
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
 
+        //  $('#menuprincipal #burger').click(function(){
+        // $('#menuprincipal ul').slideToggle(1500)
+
+
+        // });
+    </script>
 </body>
+
 
 </html>
