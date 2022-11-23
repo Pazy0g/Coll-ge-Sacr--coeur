@@ -68,10 +68,39 @@ ul {
   margin: 0 auto;
 }
 
-/* ================= Header ============================ */
+@keyframes bodyentry {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
 
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+body{
+
+  animation: bodyentry 1s ease 0s 1 normal forwards;
+
+
+
+}
+/* ================= Header ============================ */
+@keyframes headerentry {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 #entete {
   padding: 30px;
+  animation: headerentry 1s ease 0s 1 normal forwards;
 }
 
 #logo {
@@ -202,7 +231,6 @@ hr {
   -moz-transform: scale(1.3);
   -ms-transform: scale(1.3);
   -o-transform: scale(1.3);
-
 }
 
 #imgp img {
@@ -211,7 +239,6 @@ margin: auto;
   box-shadow: 0px 0px 10px 0px rgb(0, 0, 0,1);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
-
 }
 
 #imgp p {
@@ -224,11 +251,85 @@ margin: auto;
 }
 
 #imgp p:hover {
-
   color: black;
-
 }
 
 
 
 /* ======================= Section le Collège ======================== */
+
+
+#lecollege{
+width: 100%;
+padding: 5%;
+
+}
+
+#edito{
+width: 40%;
+line-break: auto;
+margin-left: 250px;
+
+}
+
+#edito p{
+  border: 1px solid black;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0,1);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,1);
+  transition: 0.6s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  cursor:default;
+}
+
+#edito strong{
+
+font-weight: 500;
+
+}
+
+#edito p:hover{
+
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0,1);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,1);
+
+}
+
+
+/* ===================== Pied De Page ======================= */
+
+#footer{
+
+display: flex;
+
+
+}
+
+#links{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+#social{
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+
+#social img{
+flex-direction: column;
+width: 30%;
+
+}
