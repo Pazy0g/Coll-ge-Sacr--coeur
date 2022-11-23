@@ -19,16 +19,6 @@
   /* Legacy iOS */
 }
 
-
-body {
-
-  font-family: 'Oswald';
-
-
-}
-
-
-
 /* Variables */
 
 :root {
@@ -82,13 +72,12 @@ ul {
 }
 
 body {
+  font-family: 'Oswald';
   animation: bodyentry 2s ease 0s 1 normal forwards;
   -webkit-animation: bodyentry 2s ease 0s 1 normal forwards;
 }
 
 /* ================= Header ============================ */
-
-
 
 /* Animation d'entrée du header */
 @keyframes headerentry {
@@ -143,10 +132,7 @@ body {
 }
 
 #navbar ul li a:hover {
-
-
   color: black;
-
 }
 
 /* ============================== Début du main content =================== */
@@ -166,14 +152,13 @@ body {
   font-weight: 500;
 }
 
-
-
 /* ============================ Modification Slider ===================== */
 
 .slider-wrapper {
 
   margin-top: 2px;
   padding-bottom: 50px;
+
 }
 
 
@@ -413,4 +398,55 @@ hr {
   .footer-distributed .footer-left p.footer-links {
     line-height: 1.8;
   }
+}
+
+
+
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width:600px){
+
+body{
+  box-sizing: border-box;
+  width: 600px;
+
+}
+.container{
+
+width: auto;
+
+}
+
+#actus{
+
+flex-direction: column;
+width: 90%;
+scale: 1;
+
+}
+
+#navbar{
+
+display: flex;
+justify-content: center;
+
+}
+
+
+.navphone{
+
+font-size: 1rem;
+
+
+}
+
+
+
+
+
+
+
+
+
 }
