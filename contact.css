@@ -140,9 +140,170 @@
     color: black;
   
   }
+
+  /* Menu burger */
+
+/* h1 (Moschino) */
+
+
+
+/* li + a href */
+
+
+
+/* menu smartphone */
+
+#menu-burger {
+  display: none;
+}
+
+/* création trait menu burger */
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 7px;
+  background-color: #000;
+  margin: 7px 0;
+  border-radius: 5px;
+  transition: 0.4s;
+
+}
+
+.nav-smartphone {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.96);
+  overflow-x: hidden;
+  transition: 0.6s;
+}
+
+/* le menu a l'intérieur du menu burger */
+
+.nav-smartphone-liens {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-smartphone a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+.nav-smartphone a:hover,
+.nav-smartphone a:focus {
+  color: #f1f1f1;
+}
+
+.nav-smartphone .bouton-fermer {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* responsive */
+@media all and (max-width: 768px) {
+
+  /* corps de la page */
+  
+  body {
+     width: 100%;
+  }
+
+  /* NAV */
+
+  .nav {
+     display: flex;
+     justify-content: center;
+     padding: 5px;
+  }
+
+  .menu {
+     font-size: 2.5rem;
+     padding: 5px;
+     list-style: none;
+  }
+
+  .menu-ul {
+     display: none;
+  }
+
+  #menu-burger {
+     display: initial;
+  }
+
+}
   
   /* ============================== Début du main content =================== */
   
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  margin-left: -18px;
+  padding: 15px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box;/* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+label{
+
+margin-left: -5px;
+
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  margin-top: 20px;
+  margin-left: -18px;
+  background-color: #5f47e7;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid #5f47e7;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-weight: bold;
+}
+
+
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #ffffff;
+  color: #5f47e7;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+} 
+
+
   /* fond gris */
   .color {
     height: 80px;
@@ -151,163 +312,49 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   }
   
- 
 
-  @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+  
 
-  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    color: #bbb5af;
-  }
-  
-  input::-moz-placeholder, textarea::-moz-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-    color: #bbb5af;
-  }
-  
-  input::placeholder, textarea::placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::placeholder, textarea::focus:placeholder {
-    color: #bbb5af;
-  }
-  
-  input::-ms-placeholder, textarea::-ms-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-    color: #bbb5af;
-  }
-  
-  /* on hover placeholder */
-  
-  input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
-    color: var(--fond-gris);
-    font-size: 0.875em;
-  }
-  
-  input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-    color: var(--fond-gris);
-  }
-  
-  input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-    color: var(--fond-gris);
-    font-size: 0.875em;
-  }
-  
-  input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-    color: var(--fond-gris);
-  }
-  
-  input:hover::placeholder, textarea:hover::placeholder {
-    color: var(--fond-gris);
-    font-size: 0.875em;
-  }
-  
-  input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-    color: black;
-  }
-  
-  input:hover::placeholder, textarea:hover::placeholder {
-    color: black;
-    font-size: 0.875em;
-  }
-  
-  input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
-    color: var(--fond-gris);
-  }
-  
-  
-  #form {
-    position: relative;
-    width: 500px;
-    margin: 50px auto 100px auto;
-  }
-  
-  input {
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    width: 470px;
-    height: 50px;
-    padding: 0px 15px 0px 15px;
-    
-    background: transparent;
-    outline: none;
-    color: black;
-    
-    border: solid 1px var(--fond-gris);
-    border-bottom: none;
-    
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-  }
-  
-  input:hover {
-    background: var(--fond-gris);
-    color: black;
-  }
-  
-  textarea {
-    width: 470px;
-    max-width: 470px;
-    height: 110px;
-    max-height: 110px;
-    padding: 15px;
-    
-    background: transparent;
-    outline: none;
-    
-    color: black;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    
-    border: solid 1px #b3aca7;
-    
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-  }
-  
-  textarea:hover {
-    background: var(--fond-gris);
-    color: black;
-  }
-  
-  #submit {
-    width: 502px;
-    
-    padding: 0;
-    margin: -5px 0px 0px 0px;
-    
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    color: #b3aca7;
-    
-    outline:none;
-    cursor: pointer;
-    
-    border: solid 1px var(--fond-gris);
-    border-top: none;
-  }
-  
-  #submit:hover {
-    color: black;
-  }
+
+.colonne{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+padding-bottom: 50px;
+padding-top: 50px;
+}
+
+
+
+.colonne p{
+
+margin-right: 50px;
+
+}
+
+#adresse{
+font-style: normal;
+margin-right: 30px;
+}
+
+
+
+.colonne {
+
+
+    width: 100%;
+
+}
+
+
+.colonne h5{
+
+font-size: 1.2rem;
+font-weight: bold;
+
+
+}
 
 
 
@@ -317,14 +364,15 @@
 
 
 
+/* MAP */
 
+#map{
+width: 10%;
+height: 10%;
+display: flex;
+justify-content: flex-end;
 
-
-
-
-
-
-
+}
 
 
 
@@ -431,3 +479,63 @@
       line-height: 1.8;
     }
   }
+
+
+
+
+  /* MediaQueries de la page  */
+
+
+  @media screen and (max-width:600px){
+
+    body{
+      box-sizing: border-box;
+      width: 600px;
+    
+    }
+    .container{
+    
+    width: auto;
+    
+    }
+    
+  
+    
+    #navbar{
+    
+    display: flex;
+    justify-content: center;
+    
+    }
+    
+    
+    .navphone{
+    
+    font-size: 1rem;
+    
+    
+    }
+    
+    
+    
+    ul li a{
+    
+    display: none;
+    
+    }
+    
+    .footer-distributed{
+    
+    width: auto;
+    
+    }
+    
+    #adresse{
+      font-style: normal;
+      margin-left: 60px;
+    
+      }
+      
+
+    
+    }
