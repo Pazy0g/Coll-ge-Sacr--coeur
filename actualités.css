@@ -19,6 +19,8 @@
     /* Legacy iOS */
   }
   
+
+
   /* Variables */
   
   :root {
@@ -111,6 +113,8 @@
     margin-left: 50px;
   
   }
+
+  /* Navigation */
   
   #navbar ul {
     margin: auto;
@@ -138,13 +142,6 @@
   }
 
    /* Menu burger */
-
-/* h1 (Moschino) */
-
-
-
-/* li + a href */
-
 
 
 /* menu smartphone */
@@ -209,7 +206,7 @@
   font-size: 60px;
 }
 
-/* responsive */
+/* responsive du menu burger*/
 @media all and (max-width: 768px) {
 
   /* corps de la page */
@@ -281,6 +278,7 @@ padding-top: 45px;
 
 
 
+          /* Texte et bouton rejoindre le facebook */
 
 #facebook{
     width: 100%;
@@ -320,6 +318,9 @@ margin-left:  42%;
 
 
 }
+
+
+/* contenu des flips articles */
 
 *,
 *:before,
@@ -389,6 +390,9 @@ body {
   margin: 1rem;
   position: relative;
 }
+
+/* Responsive des articles */
+
 @media screen and (max-width: 800px) {
   .card {
     width: calc(50% - 2rem);
@@ -607,7 +611,7 @@ body {
   text-decoration: underline;
 }
 
-/* Media Queries */
+/* Media Queries du footer */
 
 @media (max-width: 600px) {
 
@@ -627,6 +631,8 @@ body {
 }
 
 
+
+/* Mediaqueries de la page  */
 
 @media screen and (max-width:600px){
 
@@ -690,14 +696,10 @@ margin: auto;
   
 padding-top: 25px;
 margin-left:  35%;
+padding-bottom: 20px;
 
 
 }
 
-.bouton1 a{
-
-
-
-}
 
 }

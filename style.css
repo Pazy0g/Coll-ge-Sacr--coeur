@@ -58,7 +58,10 @@ ul {
   margin: 0 auto;
 }
 
-/* Animation d'entrée du body */
+
+
+/* ======================Animation d'entrée du corps de page ========================*/
+
 @keyframes bodyentry {
   0% {
     opacity: 0;
@@ -73,13 +76,14 @@ ul {
 
 body {
   font-family: 'Oswald';
-  animation: bodyentry 2s ease 0s 1 normal forwards;
+   animation: bodyentry 2s ease 0s 1 normal forwards; /* Animation  */
   -webkit-animation: bodyentry 2s ease 0s 1 normal forwards;
 }
 
 /* ================= Header ============================ */
 
 /* Animation d'entrée du header */
+
 @keyframes headerentry {
   0% {
     opacity: 0;
@@ -94,8 +98,10 @@ body {
 
 #entete {
   padding: 30px;
-  animation: headerentry 1s ease 0s 1 normal forwards;
+  animation: headerentry 1s ease 0s 1 normal forwards; /*Animation */
 }
+
+/* logo du site */
 
 #logo {
   width: 100%;
@@ -111,6 +117,8 @@ body {
   margin-left: 50px;
 
 }
+
+/* Navigation  */
 
 #navbar ul {
   margin: auto;
@@ -138,14 +146,6 @@ body {
 }
 
 /* Menu burger */
-
-/* h1 (Moschino) */
-
-
-
-/* li + a href */
-
-
 
 /* menu smartphone */
 
@@ -209,7 +209,7 @@ body {
   font-size: 60px;
 }
 
-/* responsive */
+/* responsive du menu burger */
 @media all and (max-width: 768px) {
 
   /* corps de la page */
@@ -491,7 +491,7 @@ padding-top: 5%;
   text-decoration: underline;
 }
 
-/* Media Queries */
+/* Media Queries du footer*/
 
 @media (max-width: 600px) {
 
@@ -513,7 +513,7 @@ padding-top: 5%;
 
 
 
-/* MEDIA QUERIES  */
+/* MEDIA QUERIES de la page */
 
 @media screen and (max-width:600px){
 

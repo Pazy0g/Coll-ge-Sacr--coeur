@@ -33,7 +33,7 @@
 
 
         <!-- MENU NAVIGATION -->
-        <nav id="navbar">
+        <nav id="navbar" role="navigation" aria-roledescription="Navigation wide screen mode">
 
             <ul>
                 <li><a href="college.html">Le collège</a></li>
@@ -49,7 +49,7 @@
 
         </nav>
 
-        <div id="menu-burger">
+        <div id="menu-burger" role="navbar">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -58,7 +58,9 @@
 
     </header>
 
-    <section id="nav-smartphone" class="nav-smartphone">
+    <!-- Menu navigation pour smartphone et petit écrans -->
+
+    <section id="nav-smartphone" class="nav-smartphone" role="navigation" aria-roledescription="Navigation small screen/phone">
 
         <a class="bouton-fermer" id="bouton-fermer">&times;</a>
 
@@ -80,16 +82,18 @@
     <!-- MAIN CONTENT -->
     <main id="main-content" class="container" role="main">
 
+
+            <!-- Petit padding avant header         -->
         <div class="color">
 
         </div>
 
 
 
-
+                                    <!-- Formulaire pleine page -->
         <div class="container">
 
-            <form action="action_page.php">
+            <form action="traitement_page.php" role="form" aria-roledescription="contact form">
 
                 <label for="fname">Votre prénom</label>
                 <input type="text" id="fname" name="firstname" placeholder="Ecrire ici..">
@@ -101,8 +105,10 @@
 
                 <label for="subject">Votre message</label>
                 <textarea id="subject" name="subject" placeholder="Votre message ici.." style="height:200px"></textarea>
+
+                                          <!-- Radio button  -->
                 <div id="radio">
-                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <input type="radio" id="html" name="fav_language" value="HTML" role="radio">
                     <label for="html"> &nbsp; Homme</label><br>
                     <input type="radio" id="css" name="fav_language" value="CSS">
                     <label for="css"> &nbsp; Femme</label><br>
@@ -110,7 +116,8 @@
                     <label for="javascript"> &nbsp; Autre</label>
                 </div>
 
-                <input type="submit" value="Envoyer">
+                                        <!-- Bouton d'envoi a traitement_page.php -->
+                <input type="submit" value="Envoyer" role="button" aria-roledescription="send button">
 
             </form>
         </div>
@@ -118,7 +125,7 @@
 
 
         
-
+                                                    <!-- Colonne avec map & infos -->
         <div class="colonne">
 
             <iframe
@@ -165,6 +172,7 @@
 
 
 
+                    <!-- Petit padding avant footer -->
         <div class="color">
 
         </div>
@@ -172,8 +180,8 @@
     </main>
 
 
-
-    <footer class="footer-distributed">
+            <!-- Pied de page -->
+    <footer class="footer-distributed" role="navigation" aria-roledescription="footer navigation">
 
         <div class="footer-right">
 

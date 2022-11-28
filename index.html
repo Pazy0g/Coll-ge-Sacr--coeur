@@ -33,7 +33,7 @@
 
 
         <!-- MENU NAVIGATION -->
-        <nav id="navbar">
+        <nav id="navbar" role="menu">
 
             <ul>
                 <li><a href="college.html">Le collège</a></li>
@@ -49,23 +49,23 @@
 
         </nav>
 
- <div id="menu-burger">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
+        <div id="menu-burger" role="menubar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
 
 
     </header>
     <!-- MAIN CONTENT -->
 
 
-
-    <section id="nav-smartphone" class="nav-smartphone">
+    <!-- Menu de navigation pour téléphone -->
+    <section id="nav-smartphone" class="nav-smartphone" role="menu">
 
         <a class="bouton-fermer" id="bouton-fermer">&times;</a>
 
-        <!-- &times = la croix pour fermer le menu -->
+
 
         <!--  -->
         <div class="nav-smartphone-liens">
@@ -78,31 +78,36 @@
     </section>
 
 
+
+
+    <!-- Main content -->
     <main id="main-content" class="container" role="main">
+
+
+
+            <!-- Petit padding de couleur avant header -->
+
         <div class="color">
-            <h1>Bienvenue sur le site du collège le Sacré-Coeur</h1>
+            <h1 role="doc-introduction" aria-roledescription="main title">Bienvenue sur le site du collège le Sacré-Coeur</h1>
         </div>
 
 
 
 
 
-        <!-- images et titre du slider -->
-        <div class="slider-wrapper theme-default">
+        <!-- images du slider -->
+        <div class="slider-wrapper theme-default" role="slider">
 
 
 
             <div id="slider" class="nivoSlider">
-                <img src="images/slider1.jpg" alt="Garden1" />
-                <img src="images/slider4.jpg" alt="Garden2" />
-                <img src="images/slider3.jpg" alt="Garden3" />
+                <img src="images/slider1.jpg" alt="Collège Sacré-Coeur" />
+                <img src="images/slider4.jpg" alt="Collège Sacré-Coeur" />
+                <img src="images/slider3.jpg" alt="Collège Sacré-Coeur" />
 
             </div>
-            <div id="htmlcaption1" class="nivo-html-caption">
-                <h2>GARDEN<br>
-                    <small><span class="vert">pro</span> design d'extérieur</small>
-                </h2>
-            </div>
+
+
         </div>
 
         <div id="titre">
@@ -111,41 +116,50 @@
             <p>Les plus récentes</p>
         </div>
 
+
+        <!-- Section les actus récentes -->
         <section id="actus">
-            
-                <article class="article">
-                    <a href="actualités.html">
+
+            <article class="article">
+                <a href="actualités.html">
                     <div id="imgp">
                         <img src="cross2.jpg" alt="Cross contre Guingamp">
                         <p>Cross Régional contre Guingamp.</p>
                         <div>
-                        </a>
-                </article>
-            
+                </a>
+            </article>
 
-            
-                <article class="article">
-                    
-                        <a href="actualités.html">
+
+
+            <article class="article">
+
+                <a href="actualités.html">
                     <div id="imgp">
                         <img src="images/diplome.jpg" alt="remise des diplomes">
                         <p>Soirée de remise de diplômes à nos anciens 3°.</p>
-                        <div></a>
-                </article>
-            
+                        <div>
+                </a>
+            </article>
 
-            
-                <article class="article">
-                    <a href="actualités.html">
-                        <div id="imgp">
+
+
+            <article class="article">
+                <a href="actualités.html">
+                    <div id="imgp">
                         <img src="cross5e2.jpg" alt="En direct du cross du collège">
                         <p>En direct du cross du collège !</p>
-                        <div></a>
-                </article>
-            
+                        <div>
+                </a>
+            </article>
+
 
 
         </section>
+
+
+
+        <!-- Section edito  -->
+
 
 
         <div id="titre">
@@ -155,51 +169,52 @@
         </div>
 
         <section id="lecollege">
-           
+
 
             <article id="edito">
-                <p>Notre établissement, fort de ses 50 ans d’existence, 
-                    vous accueillera et vous accompagnera dans une ambiance de travail bienveillante, 
-                    exigeante et ouverte sur le monde afin que vous, élèves, 
-                    deveniez des adultes épanouis, libres et responsables. 
-                    Cet ambitieux projet a été récompensé par l’obtention du Label International, 
-                    décerné par les instances de l’Enseignement Catholique du Morbihan, 
-                    véritable reconnaissance des propositions éducatives et pédagogiques 
-                    menées par notre équipe pour permettre à nos élèves de s’ouvrir à l’international et aux autres. 
-                    Je souhaite que vous puissiez découvrir au fil des pages de ce site toute la richesse et le dynamisme 
-                    de notre établissement et espère vous rencontrer prochainement à l’occasion de votre venue au collège du Sacré-Coeur.
+                <p>Notre établissement, fort de ses 50 ans d’existence,
+                    vous accueillera et vous accompagnera dans une ambiance de travail bienveillante,
+                    exigeante et ouverte sur le monde afin que vous, élèves,
+                    deveniez des adultes épanouis, libres et responsables.
+                    Cet ambitieux projet a été récompensé par l’obtention du Label International,
+                    décerné par les instances de l’Enseignement Catholique du Morbihan,
+                    véritable reconnaissance des propositions éducatives et pédagogiques
+                    menées par notre équipe pour permettre à nos élèves de s’ouvrir à l’international et aux autres.
+                    Je souhaite que vous puissiez découvrir au fil des pages de ce site toute la richesse et le
+                    dynamisme
+                    de notre établissement et espère vous rencontrer prochainement à l’occasion de votre venue au
+                    collège du Sacré-Coeur.
 
                     Bonne lecture,
-                    
+
                     Pour toute l’équipe du collège,</p>
 
-                    <p><strong>Le Directeur,
-
-                        Grégoire LAGUERIE</strong></p>
+                <p><strong>Le Directeur, Grégoire LAGUERIE</strong></p>
 
 
 
             </article>
-            
+
 
         </section>
 
 
-       
-            <div class="color">
-                
-            </div>
+        <!-- Petit padding de couleur avant footer -->
+        <div class="color">
+
+        </div>
 
     </main>
 
-    
 
-    <footer class="footer-distributed">
+            <!-- Pied de page avec nav -->
+
+    <footer class="footer-distributed" role="contentinfo" aria-roledescription="navigation info">
 
         <div class="footer-right">
 
             <a href="#"><i class="fab fa-facebook-square"></i></a>
-            
+
 
         </div>
 
@@ -220,7 +235,7 @@
     </footer>
 
 
-    
+
 
 
 
@@ -242,37 +257,33 @@
         // });
     </script>
 
-<script src="nav.js">
+    <script src="nav.js">
+        // je définis mes constantes en allant chercher les élements par leur id
 
-// je définis mes constantes en allant chercher les élements par leur id
-
-const nav = document.getElementById("nav-smartphone");
-const open = document.getElementById("menu-burger");
-const close = document.getElementById("bouton-fermer");
-
-
-// je créer l'évenements click l'ouverture et fermeture du menu
-open.addEventListener("click", openNav);
-close.addEventListener("click", closeNav);
-
-// je définis le style de l'ouverture du menu
-
-function openNav() {
-  nav.style.width = "100%";
-}
+        const nav = document.getElementById("nav-smartphone");
+        const open = document.getElementById("menu-burger");
+        const close = document.getElementById("bouton-fermer");
 
 
-// pour fermer le menu il faut que la width soit de 0% pour qu"elle se ferme complétement
+        // je créer l'évenements click l'ouverture et fermeture du menu
+        open.addEventListener("click", openNav);
+        close.addEventListener("click", closeNav);
 
-// je définis le style de la fermeture 
+        // je définis le style de l'ouverture du menu
 
-function closeNav() {
-nav.style.width = "0%";
-}
+        function openNav() {
+            nav.style.width = "100%";
+        }
 
 
-    
-</script> 
+        // pour fermer le menu il faut que la width soit de 0% pour qu"elle se ferme complétement
+
+        // je définis le style de la fermeture 
+
+        function closeNav() {
+            nav.style.width = "0%";
+        }
+    </script>
 </body>
 
 

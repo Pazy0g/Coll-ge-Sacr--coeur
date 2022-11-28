@@ -32,7 +32,7 @@
 
 
         <!-- MENU NAVIGATION -->
-        <nav id="navbar">
+        <nav id="navbar" role="navigation" aria-roledescription="Navigation wide screen mode">
 
             <ul>
                 <li><a href="college.html">Le collège</a></li>
@@ -58,7 +58,9 @@
 
     </header>
 
-    <section id="nav-smartphone" class="nav-smartphone">
+
+       <!-- Menu navigation pour smartphone et petit écrans -->
+    <section id="nav-smartphone" class="nav-smartphone" role="navigation" aria-roledescription="Navigation small screen/phone">
 
       <a class="bouton-fermer" id="bouton-fermer">&times;</a>
 
@@ -75,17 +77,29 @@
   </section>
 
 
+
+
+
+            <!-- MAIN CONTENT -->
     <main class="container" role="main">
 
+
+
+
+      <!-- Petit padding avant header -->
         <div class="color">
 
         </div>
+
 
         <div id="titre">
             <h2>Nos actualités</h2>
             <hr size="5" noshade>
 
         </div>
+
+
+          <!-- Facebook info -->
         <div id="facebook">
         <p>Venez nous voir sur Facebook !</p><br>
         <p class="bouton1"><a href="#">Cliquez ici</a></p>
@@ -93,7 +107,9 @@
         
        <section>
 
-        <div class="content">
+
+                    <!-- Carte d'article -->
+        <div class="content" role="article" aria-roledescription="facebook article">
             <a class="card" href="https://www.facebook.com/scvannes">
               <div class="front" style="background-image: url(cross.jpg)">
                 <p>Cross Régional contre Guingamp.</p>
@@ -103,7 +119,7 @@
                   <p>Bravo à nos champions qui ont brillamment défendu  </p>les couleurs du collège au cross régional de Guingamp hier après-midi.</p>
                   <button class="button">Cliquez ici</button>
                 </div>
-              </div></a><a class="card" href="#!">
+              </div></a><a class="card" href="https://www.facebook.com/scvannes">
               <div class="front" style="background-image: url(images/diplome.jpg)">
                 <p>Soirée de remise de diplômes à nos anciens 3°.</p>
               </div>
@@ -113,7 +129,7 @@
                   <p>Bonne continuation à vous tous ! 🙋‍♀️.</p>
                   <button class="button">Cliquez ici</button>
                 </div>
-              </div></a><a class="card" href="#!">
+              </div></a><a class="card" href="https://www.facebook.com/scvannes">
               <div class="front" style="background-image: url(cross5e.jpg)">
                 <p>En direct du cross du collège !</p>
               </div>
@@ -123,7 +139,7 @@
                   
                   <button class="button">Cliquez ici</button>
                 </div>
-              </div></a><a class="card" href="#!">
+              </div></a><a class="card" href="https://www.facebook.com/scvannes">
               <div class="front" style="background-image: url(bureauapel.jpg)">
                 <p>Élection du nouveau Bureau de l'Apel hier soir. </p>
               </div>
@@ -133,7 +149,7 @@
                   
                   <button class="button">Cliquez ici</button>
                 </div>
-              </div></a><a class="card" href="#!">
+              </div></a><a class="card" href="https://www.facebook.com/scvannes">
               <div class="front" style="background-image: url(mer.jpg)">
                 <p>Première sortie en mer aujourd'hui pour les élèves de l'AS Sauvetage !</p>
               </div>
@@ -143,7 +159,7 @@
                   
                   <button class="button">Cliquez ici</button>
                 </div>
-              </div></a><a class="card" href="#!">
+              </div></a><a class="card" href="https://www.facebook.com/scvannes">
               <div class="front" style="background-image: url(apel.jpg)">
                 <p>En direct de l'AG de l'APEL :
                     Bienvenue aux parents venus nombreux participer au renouvellement du CA !</p>
@@ -159,6 +175,8 @@
 </section>
         
    
+
+ <!-- Petit padding avant footer -->
 <div class="color">
                 
 </div>
@@ -166,8 +184,8 @@
 </main>
 
 
-
-<footer class="footer-distributed">
+        <!-- Pied de page -->
+<footer class="footer-distributed" role="navigation" aria-roledescription="footer navigation">
 
 <div class="footer-right">
 
@@ -176,7 +194,7 @@
 
 </div>
 
-<div class="footer-left">
+<div class="footer-left" role="navigation" aria-roledescription="Footer navigation">
 
 <p class="footer-links">
     <a class="link-1" href="parcours.html">Parcours</a>

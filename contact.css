@@ -68,6 +68,9 @@
     margin: 0 auto;
   }
   
+
+  /* Animation d'entrée corps de la page */
+
   @keyframes bodyentry {
       0% {
           opacity: 0;
@@ -84,6 +87,8 @@
     -webkit-animation: bodyentry 2s ease 0s 1 normal forwards;
   }
   /* ================= Header ============================ */
+
+      /* Animation d'entrée du header */
   @keyframes headerentry {
       0% {
           opacity: 0;
@@ -115,6 +120,8 @@
   
   }
   
+
+  /* Navigation */
   #navbar ul {
     margin: auto;
     width: 1200px;
@@ -142,12 +149,6 @@
   }
 
   /* Menu burger */
-
-/* h1 (Moschino) */
-
-
-
-/* li + a href */
 
 
 
@@ -213,7 +214,7 @@
   font-size: 60px;
 }
 
-/* responsive */
+/* responsive du menu burger*/
 @media all and (max-width: 768px) {
 
   /* corps de la page */
@@ -248,24 +249,27 @@
   
   /* ============================== Début du main content =================== */
   
- /* Style inputs with type="text", select elements and textareas */
+
+
+
+                            /* Formulaire et info pleine page */
  input[type=text], select, textarea {
-  width: 100%; /* Full width */
+  width: 100%; 
   margin-left: -18px;
-  padding: 15px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box;/* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+  padding: 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: none; 
 }
 label{
 
 margin-left: -5px;
 
 }
-/* Style the submit button with a specific background color etc */
+
 input[type=submit] {
   margin-top: 20px;
   margin-left: -18px;
@@ -290,13 +294,13 @@ input[type=submit] {
 
 
 
-/* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
   background-color: #ffffff;
   color: #5f47e7;
 }
 
-/* Add a background color and some padding around the form */
+
 .container {
   border-radius: 5px;
   background-color: #ffffff;
@@ -465,7 +469,7 @@ justify-content: flex-end;
   
   .footer-distributed p.footer-links a:hover{text-decoration:underline;}
   
-  /* Media Queries */
+  /* Media Queries du footer */
   
   @media (max-width: 600px) {
     .footer-distributed .footer-left, .footer-distributed .footer-right {
@@ -536,6 +540,34 @@ justify-content: flex-end;
     
       }
       
+      .colonne{
 
+        display: flex;
+        flex-direction: column;
+
+      }
+
+      .colonne iframe{
+
+        width: 90%;
+        margin: auto;
+        padding-bottom: 10px;
+      }
+
+      .colonne address{
+        
+        margin: auto;
+        font-size: 16px;
+        width: 95%;
+        display: flex;
+        justify-content: flex-start;
+      }
     
+      .colonne p{
+        
+        display: flex;
+        justify-content: flex-end;
+        font-size: 16px;
+      }
+
     }
